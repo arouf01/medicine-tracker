@@ -221,8 +221,8 @@ button#reset {
 
   .table-container {
     padding: 15px;
+    overflow-x: scroll;
   }
-
   .styled-table {
     font-size: 14px;
   }
@@ -230,5 +230,11 @@ button#reset {
   .styled-table th,
   .styled-table td {
     padding: 8px 10px;
+  }
+  #section3Button {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
   }
 }
