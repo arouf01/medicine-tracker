@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Medicine Table</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="shortcut icon" href="images/drugs.png" type="image/x-icon" />
+  </head>
+  <body>
+    <div class="section section-1">
+      <div id="section1Button">
+        <button id="addMedicineBtn">Add Medicine</button>
+        <button id="showList" onclick="viewMedicineList()">Show List</button>
+      </div>
+    </div>
+    <div id="medicineAdd" class="section section-2">
+      <h1>Add Medicine</h1>
+      <form action="" id="formMedAdd">
+        <h4>Input Your Medicine Name</h4>
+        <input type="text" placeholder="Enter Medicine Name" />
+        <h4>Input Your Medicine Group</h4>
+        <input type="text" placeholder="Enter Medicine Group" />
+        <h4>Take Medicine Before/After Meal</h4>
+        <select name="medicineBeforeAfter" id="medicineBeforeAfter">
+          <option value="Before">Before</option>
+          <option value="After">After</option>
+        </select>
+        <h4>Input Quantity</h4>
+        <input type="number" placeholder="Quantity" />
+
+        <h4>Medication Intake Time</h4>
+        <select name="medicineTakenTime" id="medicineTakenTime">
+          <option value="Morning">Morning</option>
+          <option value="Noon">Noon</option>
+          <option value="Night">Night</option>
+        </select>
+        <button id="addMedicine" onclick="addNewMedicine()">Add To List</button>
+      </form>
+    </div>
+    <div class="table-container section section-3">
+      <h1>Medicine List</h1>
+      <table class="styled-table" id="medicineTable">
+        <thead>
+          <tr>
+            <th>Medicine Name</th>
+            <th>Medicine Group</th>
+            <th>Quantity</th>
+            <th>Before/After Meal</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!--All Table Data-->
+        </tbody>
+        <tfoot>
+          <tr>
+            <td colspan="1"><strong>Total Quantity</strong></td>
+            <td colspan="3" id="totalQuantity"><strong></strong></td>
+          </tr>
+        </tfoot>
+      </table>
+      <div id="section3Button">
+        <button id="save" onclick="save()">Save</button>
+        <button id="reset" onclick="logOut()">Reset</button>
+      </div>
+    </div>
+    <script src="./scripts/saveToLocal.js"></script>
+    <script src="./scripts/sections.js"></script>
+    <script src="./scripts/medicineTable.js"></script>
+    <script src="./scripts/addMedicine.js"></script>
+  </body>
+</html>
