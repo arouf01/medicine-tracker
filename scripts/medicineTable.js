@@ -14,11 +14,11 @@ function viewMedicineList() {
   //console.log(getHours);
 
   // Checking Time and On Condition Call The Medicine Function
-  if (getHours >= 1 && getHours <= 12) {
+  if (getHours >= 5 && getHours <= 11) {
     generateMedicine(morningMedicineArray);
-  } else if (getHours >= 13 && getHours <= 18) {
+  } else if (getHours >= 12 && getHours <= 17) {
     generateMedicine(noonMedicineArray);
-  } else {
+  } else if (getHours >= 18 && getHours <= 24) {
     generateMedicine(nightMedicineArray);
   }
 

@@ -25,7 +25,7 @@ function addNewMedicine() {
     nightMedicineArray.push(currentArray);
   }
 
-  // Reseting The Array
+  // Resetting The Array
   currentArray = [];
 
   document.getElementById("formMedAdd").reset();

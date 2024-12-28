@@ -16,6 +16,23 @@ body {
   padding: 20px;
 }
 
+.howToUse {
+  margin-top: 20px;
+  background-color: white;
+  color: black;
+  padding: 40px;
+  border-radius: 25px;
+  transition: all 0.3s;
+}
+.howToUse:hover {
+  filter: drop-shadow(10px 10px 20px rgba(36, 36, 36, 0.5));
+}
+.howToUse > h3 {
+  text-align: center;
+  margin: 10px;
+  padding: 15px;
+}
+
 h1 {
   margin-bottom: 20px;
   font-size: 24px;
@@ -34,6 +51,10 @@ h1 {
   max-width: 600px;
   margin: 10px 0;
   transition: opacity 0.4s ease, transform 0.4s ease;
+  transition: all 0.3s;
+}
+.section:hover {
+  filter: drop-shadow(10px 10px 20px rgba(36, 36, 36, 0.5));
 }
 
 .section-1 {
